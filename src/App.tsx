@@ -10,12 +10,12 @@ function App() {
   return (
     <>
       <h1 className={styles.title}>Buscador de Clima</h1>
-
       <div className={styles.container}>
         <Form fetchWeather={fetchWeather} />
         {loading && <Spinner />}
         {hasWeaterData && <WeatherDetail weather={weather} />}
-      </div>
+      </div>{" "}
+      <p></p>
     </>
   );
 }
